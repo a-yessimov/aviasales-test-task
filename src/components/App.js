@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/App.scss'
 import logo from '../../public/images/logo.png'
 import { Filter } from './Filter'
@@ -6,6 +6,7 @@ import { Tabs } from './Tabs'
 import { Tickets } from './Tickets'
 
 export const App = () => {
+
     return (
         <div className="container pt-5">
             <div className='text-center'>
