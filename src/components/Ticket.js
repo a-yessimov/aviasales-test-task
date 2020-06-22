@@ -4,12 +4,11 @@ import testLogo from '../../public/images/testLogo.png'
 import { Tickets } from './Tickets'
 
 export const Ticket = ({ ticket }) => {
-    console.log(ticket)
     return (
         <div className='block ticket'>
             <div className='row ticket-header'>
                 <div className='col-8'>
-                    <h3 className='price'>{ticket.price} P</h3>
+                    <h3 className='price'>{`${ticket.price.toString().slice(0, -3)} ${ticket.price.toString().slice(-3)} P`}</h3>
                 </div>
                 <div className='col-4'>
                     <img src={`https://pics.avs.io/99/36/${ticket.carrier}.png`} />
